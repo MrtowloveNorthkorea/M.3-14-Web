@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>ระบบลงชื่อบัญชีธนาคารโรงเรียนสูญหาย ม.3/14</title>
+    <link rel="shortcut icon" href="images/index.ico" type="image/x-icon">
+    
+    <!-- CSS: Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS: Bootstrap v-5.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400&display=swap" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Prompt', sans-serif;
+            background-image: url('Background 4.png'); /* กำหนดเส้นทางของไฟล์ภาพ */
+        background-size: cover; /* ทำให้ภาพพื้นหลังครอบคลุมทั้งหน้า */
+        background-position: center; /* จัดตำแหน่งภาพให้ตรงกลาง */
+        background-attachment: fixed;
+        background-repeat: no-repeat; /* ป้องกันการซ้ำของภาพ */
+
+                /* Media Query สำหรับโทรศัพท์ */
+                @media (max-width: 768px) {
+            body {
+                background-image: url('Background 4 small.png'); /* ภาพพื้นหลังจะยังคงเหมือนกัน */
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll; /* เปลี่ยนเป็น scroll เพื่อให้ภาพไม่ยึดติด */
+            }
+        }
+    }
+	</style>
+    
+<body>
+             <!-- space -->
+                        <div class="py-lg-5 py-md-4 py-sm-3 py-2"></div>
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-7 col-md-10">
+                        <div class="card  border-primary mb-6 " style="max-width:48rem;">
+                            <div class="card-header text-white bg-primary">
+                                <i class="fa fa-university" aria-hidden="true"></i> งานธนาคารโรงเรียน
+                            </div>
+                            <div class="card-body">
+                                <h3 class="fw-normal text-center mb-5 border-bottom pb-2"> ลงชื่อ สมุดบัญชีธนาคารโรงเรียนสูญหาย ม.3/14 </h3>
+
+                        <form class="form_overlay" method="POST" accept-charset="UTF-8" autocomplete="off" name="contact"> 
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="input_overlay">
+                                        <label for="fname" class="lable">ชื่อ</label>
+                                        <input type="text" name="ชื่อ" class="form-control" required autocomplete="off" placeholder="อรรถพล">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input_overlay">
+                                        <label for="lname" class="lable">นามสกุล</label>
+                                        <input type="text" name="นามสกุล" class="form-control" required autocomplete="off" placeholder="บัวทอง">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input_overlay">
+                                        <label for="email" class="lable">Email</label>
+                                        <label for="email" style="color: red; font-weight: bold;">(ใช้ Email โรงเรียนเท่านั้น!!)</label>
+                                        <input type="text" name="email" class="form-control" required autocomplete="off" placeholder="12345@ro.ac.th">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="input_overlay">
+                                        <label for="phone" class="lable">เลขที่</label>
+                                        <input type="text" name="เลขที่" class="form-control" required autocomplete="off" placeholder="43">
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label for="hobby">ต้องการทำสมุดบัญชีใหม่เพื่อนำส่งไหม</label>
+                                    <label for="hobby" style="color: red; font-weight: bold;">**ค่าบริการในการทำใหม่ ราคา 10 บาท คนที่มีเงินในบัญชีมากกว่า 10 บาท ควรทำสมุดบัญชีใหม่**</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ต้องการ" id="check1" name="ต้องการทำสมุดบัญชีใหม่?">
+                                        <label class="form-check-label" for="check1">ต้องการ (ไม่แนะนำ)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ไม่ต้องการ" id="check2" name="ไม่ต้องการทำสมุดบัญชีใหม่?">
+                                        <label class="form-check-label" for="check2">ไม่ต้องการ</label>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                <div class="col-12 text-end">
+                                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                                </div>
+                                <p id="demo"></p>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+
+    
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzwHJCXIApxuQXX5GMrYPxRcrh_p_Bd0sgLr6_P11JDE6bU8qHL8LUx8MhXYV1yV_Hg/exec'
+        const form = document.forms['contact']
+       
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => document.getElementById("demo").innerHTML = "<div class='alert alert-primary' role='alert'><b>ข้อมูลของท่านถูกบันทึกลงในระบบเรียบร้อยแล้ว!!</b></div>",contact.reset())
+            Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'บันทึกข้อมูลของท่านเรียบร้อย',
+            showConfirmButton: false,
+            timer: 1500
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+</script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         
+</body>
+</html>
